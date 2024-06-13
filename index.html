@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Landing Page</h1>
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Welcome</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque.</p>
+            <button id="open-modal">Learn More</button>
+        </section>
+
+        <section id="slider">
+            <div class="slide fade">
+                <img src="11111.jpg" alt="" height="150">
+            </div>
+            <div class="slide fade">
+                <img src="222.jpg" alt="" height="150">
+            </div>
+            <div class="slide fade">
+                <img src="11111.jpg" alt="" height="150">
+            </div>
+            <div class="slide fade">
+                <img src="222.jpg" alt="" height="150">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </section>
+
+        <section id="tabs">
+            <button class="tablink" onclick="openTab(event, 'Tab1')">Overview</button>
+            <button class="tablink" onclick="openTab(event, 'Tab2')">Features</button>
+            <button class="tablink" onclick="openTab(event, 'Tab3')">Benefits</button>
+        
+            <div id="Tab1" class="tabcontent">
+                <h3>Overview</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        
+            <div id="Tab2" class="tabcontent">
+                <h3>Features</h3>
+                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        
+            <div id="Tab3" class="tabcontent">
+                <h3>Benefits</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@example.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>This is a new modal content. You can customize it as needed.</p>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
